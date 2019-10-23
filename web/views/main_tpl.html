@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="header">
+    <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+    <ul class="layui-nav layui-nav-tree" lay-filter="test">
+        <li id="main" class="layui-nav-item">
+            <a href="javascript:;">文件管理</a>
+            <dl class="layui-nav-child">
+                <dd id="file_query"><a href="../file/list">文件查询</a></dd>
+                <dd id="file_add"><a href="../file/add">文件上传</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
